@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Formulários</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+        font-family: sans-serif;  
+    }
+    h1{
+        font-style: italic;
+        color: rgb(248, 238, 248);
+        background-color: rgb(91, 29, 190);
+        background-position: center;
+        
+    }
+    
+    h2{
+        font-style: italic;
+        color: rgb(248, 238, 248);
+        background-color: rgb(91, 29, 190);
+        background-position: center;
+    }
+   
+    form{
+        background-color: rgb(225, 213, 233);     
+        padding: 10px;
+        color: black;
+    }
+
+    input{
+      border: 1px solid cornflowerblue;
+      border-radius: 30px;
+    }
+  
+</style>
+<body>
+  <h style="text-align:center">
+  
+    <h1>FORMULARIO</h1>
+<form accept-charset="utf-8" autocomplete="on"
+action="http://www.google.com.br" target="_blank">
+<div>
+
+<div>
+   Matrícula <input type="text" name="matricula" maxlength="5" required>
+    Nome <input type="text" name="nome" placeholder="Preencha o nome completo">
+    E-mail <input type="text" name="email" placeholder="eliel.ferreira@uol.com.br"
+    readonly><br>
+</div>
+            
+  Obervação<br> 
+  <textarea cols="45" rows="7" name="observacao"> </textarea><br>
+  <input type="email" /><br>  
+  <input type="search" /><br>
+  <input type="url" /><br>
+  <input type="number" /><br><br>
+  <!-- Exemplo de radio -->
+  <input type="radio" name="sexo" checked="checked" /> Homem
+  <input type="radio" name="sexo" /> Mulher
+  <br><br>
+  <h2>Escolha quantas cores você desejar.</h2><br>
+  <input type="checkbox" name="cor1" /> Azul  
+  <input type="checkbox" name="cor2" /> Vermelho  
+  <input type="checkbox" name="cor3" /> Amarelo  
+  <br><br>
+  <input type="date" />   
+  
+  <input type="time" />
+  
+  <input type="datetime-local" />
+  <input type="month" />
+  <input type="week" /><br>
+  <input type="range" min="0" max="10" />
+  <input type="color" /><br>
+  <input type="file" />
+  <select>  
+	<option value="html">HTML 5</option>  
+	<option value="css">CSS 3</option>  
+	<option value="js">JavaScript</option>
+  </select>
+  	
+
+  <input list="browsers" name="browser"> 
+	<datalist id="browsers">    
+		<option value="Internet Explorer">    
+		<option value="Firefox">    
+		<option value="Chrome">    
+		<option value="Opera">    
+		<option value="Safari">	  
+	</datalist>
+  <br>	
+  <cadastro>
+    <fieldset>  
+		<legend>Cadastro</legend>  
+			Nome: <input type="text">
+			Email: <input type="text"><br>
+		</fieldset><br>
+  </cadastro>	
+		
+  <input type="submit" value="Enviar" /> 
+</form>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+<input type="range" id="a" value="50"> 100+
+<input type="number" id="b" value="50">=
+<output name="x" for="a b">
+</output>
+</form>
+</body>
+</html>
+
